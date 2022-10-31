@@ -22,7 +22,7 @@ function useWeather(){
       /*function error(err) {
          alert(`ERROR(${err.code}): ${err.message}`);
       }
-
+*/
       function options(){
          const options = {
          enableHighAccuracy: true,
@@ -30,9 +30,9 @@ function useWeather(){
          maximumAge: infinity
        }
        return options.enableHighAccuracy
-      } */
+      } 
       
-      navigator.geolocation.getCurrentPosition(success/*, error, options*/);
+      navigator.geolocation.getCurrentPosition(success/*, error*/, options);
 
    },[isTemp]);
 
