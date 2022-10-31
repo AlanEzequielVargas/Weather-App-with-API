@@ -28,9 +28,9 @@ function useWeather(){
          enableHighAccuracy: true,
          timeout: 1000,
          maximumAge: infinity
-       }*/
+       }
        return options.enableHighAccuracy
-      } 
+      } */
       
       navigator.geolocation.getCurrentPosition(success/*, error, options*/);
 
