@@ -19,7 +19,7 @@ function useWeather(){
          .then(res=>setWeather(res.data))
       }  
 
-      function error(err) {
+      /*function error(err) {
          alert(`ERROR(${err.code}): ${err.message}`);
       }
 
@@ -28,11 +28,11 @@ function useWeather(){
          enableHighAccuracy: true,
          timeout: 1000,
          maximumAge: infinity
-       }
+       }*/
        return options.enableHighAccuracy
       } 
       
-      navigator.geolocation.getCurrentPosition(success, error, options);
+      navigator.geolocation.getCurrentPosition(success/*, error, options*/);
 
    },[isTemp]);
 
