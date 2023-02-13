@@ -33,7 +33,7 @@ function App() {
          <h2 className='humidity'>Humidity: <span>{weather.main?.humidity}%</span></h2>
          <h2 className='clouds'>Clouds: <span>{weather.clouds?.all}%</span></h2>
          <h2 className='pressure'>Pres: <span>{weather.main?.pressure}/hPa</span></h2>
-         <button onClick={changeTemp}>C° to F°</button>
+         <button style={{cursor: 'pointer'}} onClick={changeTemp}>C° to F°</button>
    </div>
    }
       </>
